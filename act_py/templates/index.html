@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Texto con Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="body">
+   <div class="box">
+     <h1 class="title">Presiona el botón para ver el texto</h1>
+     <textarea id="text" placeholder="Escribe algo..." maxlength="300"></textarea>
+     <button class="enter" id="Enter">Mostrar texto</button>
+   </div>
+</div>
+
+<div id="modalOverlay"></div>
+
+<div id="card" class="card">
+    <div class="close">
+        <button id="closeBtn" class="close-btn">X</button>
+    </div>
+    <p id="cardText"></p>
+    <button id="colorBtn" class="color-btn">Cambiar colores</button>
+</div>
+
+<script src="{{ url_for('static', filename='scrip.js') }}"></script>
+</body>
+</html>
